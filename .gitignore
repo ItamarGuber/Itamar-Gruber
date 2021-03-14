@@ -1,1 +1,3 @@
-venv.idea_pycache_/
+venv
+.idea
+_pycache_/
