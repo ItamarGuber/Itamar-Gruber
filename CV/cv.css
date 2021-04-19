@@ -1,75 +1,63 @@
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.row:after{
-    content : "";
-    clear: both;
-    display: block;
+.wrapper {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
 }
-    [class*="col-"]{
-    float: left;
-    padding: 50px;
-    }
 
-/* For desktop: */
-.col-1 {width: 20%;}
-.col-2 {width: 80%;}
-.col-3 {width: 100%;}
+.menu {
+  width: 20%;
+  display: inline-block;
+  background-color: rgb(225, 225, 225);
+  height: 98vh;
+  padding: 10px;
+}
 
-  @media only screen and (max-width: 1000px){
-    /* For mobile phones: */
-    [class*="col-"]{
-     width: 100%;
-    }
-    [class="col-1"]{
-     height: 50px;
-    }
+.main {
+  vertical-align: top;
+  width: 77%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.main>div {
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  padding: 80px;
+}
+
+.main1 {
+  height: 100px;
+  margin-top: 1px;
+}
+
+.main2 {
+  height: 250px;
+  margin-top: 13px;
+}
+
+.main3 {
+  height: 100px;
+  margin-top: 13px;  
+}
+
+@media only screen and (max-width: 600px) {
+  .main,   .menu {
+    width: 100%;
+    margin-left: 0px;
   }
-
 
   .menu {
-    background-color: rgb(225, 225, 225);
-    padding: 120px;
-    height: 600px;
-      width:250px;
+    height: 70px;
+    margin-bottom: 10px;
+    text-align: center;    
   }
-
-  .main1 {
-     background-color: rgb(255, 255, 255);
-    padding: 80px;
-    height: 100px;
-        width: 980px;
-        margin-top: 1px;
-        margin-left: 14px;
-      text-align:center;
-       border: 1px solid black;
-
-
+  .menu > div {
+    padding: 15px;
+    height: 100%;
   }
-
-    .main2{
-   background-color: rgb(255, 255, 255);
-    padding: 80px;
-    height: 250px;
-        width: 980px;
-        margin-top: 13px;
-        margin-left: 14px;
-        text-align:center;
-        border: 1px solid black;
-
-  }
-
-    .main3{
-    background-color: rgb(255, 255, 255);
-    padding: 80px;
-    height: 100px;
-        width: 980px;
-        margin-top: 13px;
-        margin-left: 14px;
-        text-align:center;
-        border: 1px solid black;
-
-
-  }
+}
