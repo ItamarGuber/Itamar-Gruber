@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="container">
+<head>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<div>
+<body>
+<h4>Contact Me</h4>
+<form>
+<label for="finame">First name:</label><br>
+<input type="text" id="finame" name="fname" required><br><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" required><br><br>
+<label for="Adress">Email Adress:</label><br>
+<input type="email" id="Adress" name="fname" required><br><br>
+<label for="Gender">Gender:</label><br>
+<select name="Gender" id="Gender" required>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select> <br><br>
+<label for="phone">Enter your phone number:</label>
+<label for="AreaCode"></label>
+<select name="AreaCode" id="AreaCode" required>
+  <option value="050">050</option>
+  <option value="051">051</option>
+  <option value="052">052</option>
+  <option value="053">053</option>
+  <option value="054">054</option>
+  <option value="055">055</option>
+  <option value="03">03</option>
+  <option value="08">08</option>
+</select>
+<input type="tel" id="phone" name="phone"  pattern="[0-9]{7}" required><br><br>
+
+<label for="Content">Content:</label><br>
+<textarea id="Content" name="Content" cols="50" rows="5" required>
+</textarea>
+    <br><br>
+<input type="submit" value="Submit" onclick="self.close()">
+</form>
+</body>
+    </div>
+</html>

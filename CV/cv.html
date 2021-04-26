@@ -5,12 +5,15 @@
     <title>Itamar Gruber CV page </title>
     <link rel="stylesheet" href="cv.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script type = "text/javascript" src="CVfunctions.js"></script>
+
 </head>
 
-<body>
+    <body onload="Typewriter()">
+
     <div class="wrapper">
         <div class="menu">
-            <img src="Itamar%20Gruber.jpeg"  alt="Itamar PIC" class="center" >
+            <img src="Itamar%20Gruber.jpeg" alt="Itamar PIC" onload="loadImage()" class="center" >
             <h1> Itamar Gruber </h1>
                 <h2> CONATCT </h2>
                     </br>
@@ -23,9 +26,12 @@
                 <img src="location.png" class="info">
                     <p> Haim Nachman Bialik 2, Entrance C, Beer Sheva</p>
             <a href="CV_Itamar.pdf" download= "Itamar-Gruber" onclick="this">
-                <button class="centerBut">Download</button> </a>
-                 <button class="centerBut" onclick="window.open('ContactMe','name','width=600,height=400')">Contact</button>
-
+                <button class="centerBut">Download</button></a>
+            <a href="ContactMe.html" target="_blank">
+                 <button class="centerBut" onclick="this">Contact</button>
+                        </a>
+            <button class="centerBut" onclick="myFunction()">Show Snackbar</button>
+            <button id="snackbar">Find me on Linkdin for more information</button>
 
         </p>
         </div>
